@@ -1,9 +1,10 @@
 'use strict';
-
-function user(){
-let userName=prompt('what is your name')
-alert('Hi '+userName)
 let score= 0
+
+let userName=prompt('what is your name')
+function user(){
+alert('Hi '+userName)
+
 alert('you are about entering a guess game with us. Are you ready? lets go!')
 }
 
@@ -105,9 +106,9 @@ if(parseInt(birthMonth)!==3){
 }
 
 
+let colors= ['green' , 'pink' , 'aqua' , 'orange' , 'blue', 'white']
 
 function myFavorite(){
-let colors= ['green' , 'pink' , 'aqua' , 'orange' , 'blue', 'white']
 let favColor=prompt('what is my favourite color?');
 for(let i=0; i<=5; i++){
     let found=false
