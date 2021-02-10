@@ -1,10 +1,13 @@
 'use strict';
 
+function user(){
 let userName=prompt('what is your name')
 alert('Hi '+userName)
 let score= 0
 alert('you are about entering a guess game with us. Are you ready? lets go!')
+}
 
+function games(){
 let favGame=prompt('do i like gaming')
 // The accepted answers should be yes or no
 favGame = favGame.toLowerCase();
@@ -16,7 +19,9 @@ if(favGame==='yes'){
     console.log('right')
     score=score+1
 }
+}
 
+function meals(){
 let favMeal=prompt('is my favourite meal Mansaf');
 favMeal=favMeal.toUpperCase();
 if(favMeal==='YES'){
@@ -27,7 +32,9 @@ alert('you are right, Im not a Mansaf fan');
 console.log('right');
 score=score+1 ;
 }
+}
 
+function stars(){
 let stars=prompt('do i like looking up at stars at night');
 stars=stars.toLowerCase();
 if(stars==='yes'){
@@ -38,8 +45,9 @@ if(stars==='yes'){
     alert('that is not correct');
     console.log('wrong');
 }
+}
 
-
+function walk(){
 let dailyWalk= prompt('do i walk on a regular basis');
 dailyWalk=dailyWalk.toLowerCase();
 if(dailyWalk==='yes'){
@@ -50,7 +58,9 @@ if(dailyWalk==='yes'){
     alert('you are wrong');
     console.log('wrong');
 }
+}
 
+function suger(){
 let sugarFood= prompt('do i eat food which contain a lot of sugar');
 sugarFood=sugarFood.toLowerCase();
 if(sugarFood==='yes'){
@@ -60,7 +70,9 @@ if(sugarFood==='yes'){
 alert('stay healthy, your answer is correct')}
 console.log('correct')
 score=score+1 ;
+}
 
+function birth(){
 let birthMonth=prompt('In which mothnth i was born, Enter a number')
 for(let i=1; i<=4; i++){
     if(parseInt(birthMonth) === 3){
@@ -90,11 +102,11 @@ else{
 if(parseInt(birthMonth)!==3){
     alert('3 is the correct answer. Thanks for trying guessing the right answer');
 }
+}
 
 
 
-
-
+function myFavorite(){
 let colors= ['green' , 'pink' , 'aqua' , 'orange' , 'blue', 'white']
 let favColor=prompt('what is my favourite color?');
 for(let i=0; i<=5; i++){
@@ -113,6 +125,16 @@ favColor=prompt('it is not correct, try it again')} else{
     break;
 }
 }
+}
+
+user();
+games();
+meals();
+stars();
+walk();
+suger();
+birth();
+myFavorite();
 
 
 document.write(colors);
