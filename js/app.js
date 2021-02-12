@@ -1,12 +1,26 @@
 /* eslint-disable indent */
 'use strict';
+let score= 0
 
+<<<<<<< HEAD
 let userName=prompt('what is your name');
 alert('Hi '+userName) ;
 let score= 0 ;
-alert('you are about entering a guess game with us. Are you ready? lets go!')
+=======
+let userName=prompt('what is your name')
+function user(){
+alert('Hi '+userName)
 
+>>>>>>> 00ef086b2f3775c005f4658f172a4ed8ec59429d
+alert('you are about entering a guess game with us. Are you ready? lets go!')
+}
+
+<<<<<<< HEAD
 let favGame=prompt('do i like gaming');
+=======
+function games(){
+let favGame=prompt('do i like gaming')
+>>>>>>> 00ef086b2f3775c005f4658f172a4ed8ec59429d
 // The accepted answers should be yes or no
 favGame = favGame.toLowerCase();
 if(favGame==='yes' || favGame==='y'){
@@ -17,7 +31,9 @@ if(favGame==='yes' || favGame==='y'){
     console.log('right') ;
     score=score+1 ;
 }
+}
 
+function meals(){
 let favMeal=prompt('is my favourite meal Mansaf');
 favMeal=favMeal.toUpperCase();
 if((favMeal==='YES') || (favMeal==='Y')){
@@ -28,7 +44,9 @@ alert('you are right, Im not a Mansaf fan');
 console.log('right');
 score=score+1 ;
 }
+}
 
+function stars(){
 let stars=prompt('do i like looking up at stars at night');
 stars=stars.toLowerCase();
 if((stars==='yes') || (stars==='y')){
@@ -39,8 +57,9 @@ if((stars==='yes') || (stars==='y')){
     alert('that is not correct');
     console.log('wrong');
 }
+}
 
-
+function walk(){
 let dailyWalk= prompt('do i walk on a regular basis');
 dailyWalk=dailyWalk.toLowerCase();
 if(dailyWalk==='yes' || dailyWalk==='y'){
@@ -51,7 +70,9 @@ if(dailyWalk==='yes' || dailyWalk==='y'){
     alert('you are wrong');
     console.log('wrong');
 }
+}
 
+function suger(){
 let sugarFood= prompt('do i eat food which contain a lot of sugar');
 sugarFood=sugarFood.toLowerCase();
 if(sugarFood==='yes' || sugarFood==='y'){
@@ -62,6 +83,11 @@ alert('stay healthy, your answer is correct')
 console.log('correct');
 score=score+1 ;
 }
+<<<<<<< HEAD
+=======
+
+function birth(){
+>>>>>>> 00ef086b2f3775c005f4658f172a4ed8ec59429d
 let birthMonth=prompt('In which mothnth i was born, Enter a number')
 for(let i=1; i<=4; i++){
     if(parseInt(birthMonth) === 3){
@@ -91,12 +117,16 @@ else{
 if(parseInt(birthMonth)!==3){
     alert('3 is the correct answer. Thanks for trying guessing the right answer');
 }
+}
 
 
-
-
-
+<<<<<<< HEAD
 let colors= ['green' , 'pink' , 'aqua' , 'orange' , 'blue', 'white'];
+=======
+let colors= ['green' , 'pink' , 'aqua' , 'orange' , 'blue', 'white']
+
+function myFavorite(){
+>>>>>>> 00ef086b2f3775c005f4658f172a4ed8ec59429d
 let favColor=prompt('what is my favourite color?');
 for(let i=0; i<=5; i++){
     let found=false ;
@@ -114,6 +144,16 @@ favColor=prompt('it is not correct, try it again');} else{
     break;
 }
 }
+}
+
+user();
+games();
+meals();
+stars();
+walk();
+suger();
+birth();
+myFavorite();
 
 
 document.write(colors);
