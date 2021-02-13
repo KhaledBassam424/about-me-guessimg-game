@@ -1,4 +1,5 @@
 /* eslint-disable indent */
+//khaled last update
 'use strict';
 let score= 0;
 
