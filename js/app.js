@@ -1,26 +1,24 @@
 /* eslint-disable indent */
 'use strict';
-let score= 0
+let score= 0;
 
-<<<<<<< HEAD
+
 let userName=prompt('what is your name');
 alert('Hi '+userName) ;
-let score= 0 ;
-=======
-let userName=prompt('what is your name')
-function user(){
-alert('Hi '+userName)
 
->>>>>>> 00ef086b2f3775c005f4658f172a4ed8ec59429d
-alert('you are about entering a guess game with us. Are you ready? lets go!')
-}
 
-<<<<<<< HEAD
-let favGame=prompt('do i like gaming');
-=======
+
+
+
+alert('you are about entering a guess game with us. Are you ready? lets go!');
+
+
+
+
+
 function games(){
-let favGame=prompt('do i like gaming')
->>>>>>> 00ef086b2f3775c005f4658f172a4ed8ec59429d
+let favGame=prompt('do i like gaming');
+
 // The accepted answers should be yes or no
 favGame = favGame.toLowerCase();
 if(favGame==='yes' || favGame==='y'){
@@ -78,17 +76,16 @@ sugarFood=sugarFood.toLowerCase();
 if(sugarFood==='yes' || sugarFood==='y'){
     alert('Sorry, you are not right, a lot of sugar is harmful to your body');
     console.log('wrong');
-}else if(sugarFood==='no' || sugarFood==='n'){ 
-alert('stay healthy, your answer is correct')
+}else if(sugarFood==='no' || sugarFood==='n'){
+alert('stay healthy, your answer is correct');
 console.log('correct');
 score=score+1 ;
 }
-<<<<<<< HEAD
-=======
+}
 
-function birth(){
->>>>>>> 00ef086b2f3775c005f4658f172a4ed8ec59429d
-let birthMonth=prompt('In which mothnth i was born, Enter a number')
+function borntime(){
+
+let birthMonth=prompt('In which mothnth i was born, Enter a number');
 for(let i=1; i<=4; i++){
     if(parseInt(birthMonth) === 3){
         alert('smart boy');
@@ -120,13 +117,8 @@ if(parseInt(birthMonth)!==3){
 }
 
 
-<<<<<<< HEAD
 let colors= ['green' , 'pink' , 'aqua' , 'orange' , 'blue', 'white'];
-=======
-let colors= ['green' , 'pink' , 'aqua' , 'orange' , 'blue', 'white']
-
 function myFavorite(){
->>>>>>> 00ef086b2f3775c005f4658f172a4ed8ec59429d
 let favColor=prompt('what is my favourite color?');
 for(let i=0; i<=5; i++){
     let found=false ;
@@ -146,13 +138,13 @@ favColor=prompt('it is not correct, try it again');} else{
 }
 }
 
-user();
+
 games();
 meals();
 stars();
 walk();
 suger();
-birth();
+borntime();
 myFavorite();
 
 
